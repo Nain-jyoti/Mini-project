@@ -21,7 +21,7 @@ public class TicTacToe extends Application {
 
     private Button buttons[][] = new Button[3][3];
     private Label playerXScoreLabel, PlayerOScoreLabel;
-    private int playerXScore=0, playerYScore=0;
+    private int playerXScore=0, playerOScore=0;
     private boolean playerXTurn = true;
     private BorderPane createContent(){
         BorderPane root = new BorderPane();
@@ -180,8 +180,8 @@ public class TicTacToe extends Application {
                 playerXScore++;
                 playerXScoreLabel.setText("Player X : " + playerXScore);
             } else {
-                playerYScore++;
-                playerXScoreLabel.setText("Player Y : " + playerYScore);
+                playerOScore++;
+                PlayerOScoreLabel.setText("Player O : " + playerOScore);
             }
         }
 
